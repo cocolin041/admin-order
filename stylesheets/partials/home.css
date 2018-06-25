@@ -54,34 +54,48 @@ main .container #home {
 main .container #home > div {
   margin-bottom: 20px;
 }
-/* line 46, ../../sass/partials/home.scss */
+/* line 45, ../../sass/partials/home.scss */
+main .container #home .main-title {
+  font-family: "HelveticaNeue-Bold";
+  font-size: 24px;
+  color: #000000;
+}
+/* line 51, ../../sass/partials/home.scss */
 main .container #home .overview-date-range div {
   display: inline;
 }
-/* line 49, ../../sass/partials/home.scss */
+/* line 54, ../../sass/partials/home.scss */
 main .container #home .overview-date-range .date-range {
   float: right;
   font-family: "HelveticaNeue-Medium";
   font-size: 16px;
   color: #9B9B9B;
 }
-/* line 55, ../../sass/partials/home.scss */
+/* line 60, ../../sass/partials/home.scss */
 main .container #home .overview-date-range .date-range .range select {
   font-family: "HelveticaNeue-Medium";
   font-size: 16px;
   color: #9B9B9B;
   border: none;
 }
-/* line 64, ../../sass/partials/home.scss */
+/* line 69, ../../sass/partials/home.scss */
 main .container #home .number-summary {
   text-align: center;
 }
-/* line 66, ../../sass/partials/home.scss */
+/* line 71, ../../sass/partials/home.scss */
 main .container #home .number-summary .row {
   width: 100%;
   margin: 0;
 }
-/* line 70, ../../sass/partials/home.scss */
+/* line 75, ../../sass/partials/home.scss */
+main .container #home .number-summary .row > div:nth-child(1) {
+  padding-left: 0;
+}
+/* line 78, ../../sass/partials/home.scss */
+main .container #home .number-summary .row > div:nth-child(3) {
+  padding-right: 0;
+}
+/* line 82, ../../sass/partials/home.scss */
 main .container #home .number-summary .row .total-revenue, main .container #home .number-summary .row .total-cost, main .container #home .number-summary .row .net-income {
   background: #FFFFFF;
   box-shadow: 0 0 10px 5px #EBEBEB;
@@ -89,179 +103,187 @@ main .container #home .number-summary .row .total-revenue, main .container #home
   padding: 30px 0;
   font-family: "HelveticaNeue-Bold";
 }
-/* line 76, ../../sass/partials/home.scss */
+/* line 88, ../../sass/partials/home.scss */
 main .container #home .number-summary .row .total-revenue .number, main .container #home .number-summary .row .total-cost .number, main .container #home .number-summary .row .net-income .number {
   font-size: 36px;
   margin-top: 8px;
 }
-/* line 80, ../../sass/partials/home.scss */
+/* line 92, ../../sass/partials/home.scss */
 main .container #home .number-summary .row .total-revenue .title, main .container #home .number-summary .row .total-cost .title, main .container #home .number-summary .row .net-income .title {
   margin-bottom: 8px;
 }
-/* line 82, ../../sass/partials/home.scss */
+/* line 94, ../../sass/partials/home.scss */
 main .container #home .number-summary .row .total-revenue .title i, main .container #home .number-summary .row .total-cost .title i, main .container #home .number-summary .row .net-income .title i {
   font-size: 24px;
 }
-/* line 89, ../../sass/partials/home.scss */
+/* line 102, ../../sass/partials/home.scss */
 main .container #home .number-summary .row .total-revenue .number {
   color: #7ED321;
 }
-/* line 94, ../../sass/partials/home.scss */
+/* line 107, ../../sass/partials/home.scss */
 main .container #home .number-summary .row .total-cost .number {
   color: #D0021B;
   font-size: 36px;
 }
-/* line 100, ../../sass/partials/home.scss */
+/* line 113, ../../sass/partials/home.scss */
 main .container #home .number-summary .row .net-income .number {
   color: #4A90E2;
   font-size: 36px;
 }
-/* line 108, ../../sass/partials/home.scss */
+/* line 120, ../../sass/partials/home.scss */
+main .container #home .activity-curve {
+  background: #FFFFFF;
+  box-shadow: 0 0 10px 5px #EBEBEB;
+  border-radius: 3px;
+}
+/* line 124, ../../sass/partials/home.scss */
+main .container #home .activity-curve .main-title {
+  margin-left: 40px;
+  padding-top: 30px;
+}
+/* line 130, ../../sass/partials/home.scss */
 main .container #home .transaction-latest .transaction, main .container #home .transaction-latest .latest {
   background: #FFFFFF;
   box-shadow: 0 0 10px 5px #EBEBEB;
   border-radius: 3px;
   padding: 30px;
 }
-/* line 113, ../../sass/partials/home.scss */
-main .container #home .transaction-latest .transaction .title, main .container #home .transaction-latest .latest .title {
-  font-family: "HelveticaNeue-Bold";
-  font-size: 24px;
-  color: #000000;
+/* line 135, ../../sass/partials/home.scss */
+main .container #home .transaction-latest .transaction .main-title, main .container #home .transaction-latest .latest .main-title {
   margin-bottom: 30px;
 }
-/* line 121, ../../sass/partials/home.scss */
+/* line 140, ../../sass/partials/home.scss */
 main .container #home .transaction-latest .transaction .facebook, main .container #home .transaction-latest .transaction .google, main .container #home .transaction-latest .transaction .shopify, main .container #home .transaction-latest .transaction .wordpress {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 24px 0;
 }
-/* line 127, ../../sass/partials/home.scss */
+/* line 146, ../../sass/partials/home.scss */
 main .container #home .transaction-latest .transaction .facebook .website-link span:nth-child(1), main .container #home .transaction-latest .transaction .google .website-link span:nth-child(1), main .container #home .transaction-latest .transaction .shopify .website-link span:nth-child(1), main .container #home .transaction-latest .transaction .wordpress .website-link span:nth-child(1) {
   font-size: 45px;
   vertical-align: middle;
   margin-right: 20px;
 }
-/* line 132, ../../sass/partials/home.scss */
+/* line 151, ../../sass/partials/home.scss */
 main .container #home .transaction-latest .transaction .facebook .website-link span:nth-child(2), main .container #home .transaction-latest .transaction .google .website-link span:nth-child(2), main .container #home .transaction-latest .transaction .shopify .website-link span:nth-child(2), main .container #home .transaction-latest .transaction .wordpress .website-link span:nth-child(2) {
   font-size: 16px;
   color: #9B9B9B;
 }
-/* line 138, ../../sass/partials/home.scss */
+/* line 157, ../../sass/partials/home.scss */
 main .container #home .transaction-latest .transaction .facebook .number-percentage > span:nth-child(1), main .container #home .transaction-latest .transaction .google .number-percentage > span:nth-child(1), main .container #home .transaction-latest .transaction .shopify .number-percentage > span:nth-child(1), main .container #home .transaction-latest .transaction .wordpress .number-percentage > span:nth-child(1) {
   margin-right: 20px;
 }
-/* line 141, ../../sass/partials/home.scss */
+/* line 160, ../../sass/partials/home.scss */
 main .container #home .transaction-latest .transaction .facebook .number-percentage .increase, main .container #home .transaction-latest .transaction .google .number-percentage .increase, main .container #home .transaction-latest .transaction .shopify .number-percentage .increase, main .container #home .transaction-latest .transaction .wordpress .number-percentage .increase {
   color: #7ED321;
 }
-/* line 144, ../../sass/partials/home.scss */
+/* line 163, ../../sass/partials/home.scss */
 main .container #home .transaction-latest .transaction .facebook .number-percentage .decrease, main .container #home .transaction-latest .transaction .google .number-percentage .decrease, main .container #home .transaction-latest .transaction .shopify .number-percentage .decrease, main .container #home .transaction-latest .transaction .wordpress .number-percentage .decrease {
   color: #D0021B;
 }
-/* line 151, ../../sass/partials/home.scss */
+/* line 170, ../../sass/partials/home.scss */
 main .container #home .transaction-latest .latest .product-shortcut {
   overflow: auto;
 }
-/* line 153, ../../sass/partials/home.scss */
+/* line 172, ../../sass/partials/home.scss */
 main .container #home .transaction-latest .latest .product-shortcut .product-img {
   float: left;
   margin: 0 21px 0 0;
 }
-/* line 156, ../../sass/partials/home.scss */
+/* line 175, ../../sass/partials/home.scss */
 main .container #home .transaction-latest .latest .product-shortcut .product-img img {
   height: 100px;
 }
-/* line 160, ../../sass/partials/home.scss */
+/* line 179, ../../sass/partials/home.scss */
 main .container #home .transaction-latest .latest .product-shortcut .product-name {
   margin: 8px 0;
   font-family: "HelveticaNeue-Bold";
   font-size: 20px;
 }
-/* line 165, ../../sass/partials/home.scss */
+/* line 184, ../../sass/partials/home.scss */
 main .container #home .transaction-latest .latest .product-shortcut .order-details {
   display: flex;
 }
-/* line 167, ../../sass/partials/home.scss */
+/* line 186, ../../sass/partials/home.scss */
 main .container #home .transaction-latest .latest .product-shortcut .order-details .time-customer {
   margin: 0 88px 0 0;
 }
-/* line 169, ../../sass/partials/home.scss */
+/* line 188, ../../sass/partials/home.scss */
 main .container #home .transaction-latest .latest .product-shortcut .order-details .time-customer .order-created-at {
   margin: 8px 0;
 }
-/* line 174, ../../sass/partials/home.scss */
+/* line 193, ../../sass/partials/home.scss */
 main .container #home .transaction-latest .latest .product-shortcut .order-details .total-cost > div:nth-child(1) {
   margin: 8px 0;
   float: right;
 }
-/* line 184, ../../sass/partials/home.scss */
+/* line 203, ../../sass/partials/home.scss */
 main .container #orders {
   display: none;
   padding: 20px 0;
 }
-/* line 188, ../../sass/partials/home.scss */
+/* line 207, ../../sass/partials/home.scss */
 main .container #orders #table .table-header {
   line-height: 40px;
   background-color: #FFFFFF;
   color: #000000;
   font-size: 16px;
 }
-/* line 193, ../../sass/partials/home.scss */
+/* line 212, ../../sass/partials/home.scss */
 main .container #orders #table .table-header > div {
   display: inline-block;
 }
-/* line 198, ../../sass/partials/home.scss */
+/* line 217, ../../sass/partials/home.scss */
 main .container #orders #table .table-content > div {
   display: inline-block;
   vertical-align: top;
   margin-top: 17px;
 }
-/* line 203, ../../sass/partials/home.scss */
+/* line 222, ../../sass/partials/home.scss */
 main .container #orders #table .table-content:nth-child(even) {
   background-color: inherit;
 }
-/* line 206, ../../sass/partials/home.scss */
+/* line 225, ../../sass/partials/home.scss */
 main .container #orders #table .table-content:nth-child(odd) {
   background-color: #EBEBEB;
 }
-/* line 210, ../../sass/partials/home.scss */
+/* line 229, ../../sass/partials/home.scss */
 main .container #orders #table .checkbox {
   background-color: #FFFFFF;
   height: 15px;
   width: 15px;
   margin: 0 8px 0 16px;
 }
-/* line 216, ../../sass/partials/home.scss */
+/* line 235, ../../sass/partials/home.scss */
 main .container #orders #table .customer {
   width: 15%;
 }
-/* line 219, ../../sass/partials/home.scss */
+/* line 238, ../../sass/partials/home.scss */
 main .container #orders #table .product-list {
   width: 17%;
 }
-/* line 222, ../../sass/partials/home.scss */
+/* line 241, ../../sass/partials/home.scss */
 main .container #orders #table .product-list .item .quantity {
   float: right;
 }
-/* line 227, ../../sass/partials/home.scss */
+/* line 246, ../../sass/partials/home.scss */
 main .container #orders #table .total {
   width: 8%;
 }
-/* line 230, ../../sass/partials/home.scss */
+/* line 249, ../../sass/partials/home.scss */
 main .container #orders #table .add-to-cart {
   width: 13%;
 }
-/* line 233, ../../sass/partials/home.scss */
+/* line 252, ../../sass/partials/home.scss */
 main .container #orders #table .check-out {
   width: 13%;
 }
-/* line 236, ../../sass/partials/home.scss */
+/* line 255, ../../sass/partials/home.scss */
 main .container #orders #table .address {
   width: 15%;
 }
-/* line 239, ../../sass/partials/home.scss */
+/* line 258, ../../sass/partials/home.scss */
 main .container #orders #table .status {
   width: 12%;
 }

@@ -1,83 +1,87 @@
-var parseTime = d3.timeParse("%Y");
+var cost = [
+  {x: 0, y: 500},
+  {x: 1, y: 600},
+  {x: 2, y: 2500},
+  {x: 3, y: 3000},
+  {x: 4, y: 2500},
+  {x: 5, y: 500},
+  {x: 6, y: 1000},
+  {x: 7, y: 2000}
+]
+var income = [
+  {x: 0, y: 6000},
+  {x: 1, y: 5000},
+  {x: 2, y: 2000},
+  {x: 3, y: 4000},
+  {x: 4, y: 3800},
+  {x: 5, y: 5000},
+  {x: 6, y: 6500},
+  {x: 7, y: 5000}
+]
+var revenue = [
+  {x: 0, y: 7200},
+  {x: 1, y: 7000},
+  {x: 2, y: 5500},
+  {x: 3, y: 7200},
+  {x: 4, y: 5900},
+  {x: 5, y: 6100},
+  {x: 6, y: 7500},
+  {x: 7, y: 7400} 
+]
 
-var svg = d3.select("svg");
+//measure margin and height, width, in order to set the scale range
+var svg_width = 1100;
+var svg_height = 406;
+var path_margin = {'top': 104, 'right': 64, 'bottom': 85, 'left': 137}
+//calculate min and max of all data, in order to set the scale domain
+var cost_income_revenue = cost.concat(income).concat(revenue);
+var maxX_all = d3.max(cost_income_revenue, function(d){ return d.x})
+var minX_all = d3.min(cost_income_revenue, function(d){ return d.x})
+var maxY_all = d3.max(cost_income_revenue, function(d){ return d.y})
+var minY_all = d3.min(cost_income_revenue, function(d){ return d.y})
 
-var margin = {top: 30, right: 50, bottom: 30, left: 30},
-    width = +svg.attr("width") - margin.left - margin.right,
-    height = +svg.attr("height") - margin.top - margin.bottom,
-    labelPadding = 3;
+//define scale
+var scaleX = d3.scale.linear()
+                     .range([path_margin.left, svg_width - path_margin.right])  //x range(width)
+                     .domain([minX_all, maxX_all])  //use min and max of all data
+var scaleY = d3.scale.linear()
+                     .range([path_margin.top, svg_height - path_margin.bottom])  //y range(height)
+                     .domain([8000 - maxY_all, 8000 - minY_all])  //same here
 
-var g = svg.append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-/*
-var parseData = function(d) {
-  for (i = 0; i < d.length; i++) {
-    d[i].date = d[i].date.getFullYear()
-    //d[i].date = d[i].date.getFullYear()
-  }
-  //for (var k in d) if (k !== "date") d[k] = +d[k];
-  return d;
-};
-var data2 = parseData(data2);
-*/
-
-var errorData = function(data) {
-
-  var series = data.map(function(key) {
-    return data.map(function(d) {
-      return {
-        date: d.date,
-        value: d.Apples
-      };
-    });
-  });
-
-  var x = d3.scaleTime()
-      .domain([data[0].date, data[data.length - 1].date])
-      .range([0, width]);
-
-  var y = d3.scaleLinear()
-      .domain([0, d3.max(series, function(s) { return d3.max(s, function(d) { return d.value; }); })])
-      .range([height, 0]);
-
-  var z = d3.scaleOrdinal(d3.schemeCategory10);
-
-  g.append("g")
-      .attr("class", "axis axis--x")
-      .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
-
-  var serie = g.selectAll(".serie")
-      .data(series)
-      .enter().append("g")
-      .attr("class", "serie");
-
-  serie.append("path")
-      .attr("class", "line")
-      .style("stroke", function(d) { return z(d[0].key); })
-      .attr("d", d3.line()
-          .x(function(d) { return x(d.date); })
-          .y(function(d) { return y(d.value); }));
-
-  var label = serie.selectAll(".label")
-      .data(function(d) { return d; })
-      .enter().append("g")
-      .attr("class", "label")
-      .attr("transform", function(d, i) { return "translate(" + x(d.date) + "," + y(d.value) + ")"; });
-
-  label.append("text")
-      .attr("dy", ".35em")
-      .text(function(d) { return d.value; })
-      .filter(function(d, i) { return i === data.length - 1; })
-      .append("tspan")
-      .attr("class", "label-key")
-      .text(function(d) { return " " + d.key; });
-
-  label.append("text","rect")
-      .datum(function() { return this.previousElementSibling.getBBox(); })
-      .attr("x", function(d) { return d.x - labelPadding; })
-      .attr("y", function(d) { return d.y - labelPadding; })
-      .attr("width", function(d) { return d.width + 2 * labelPadding; })
-      .attr("height", function(d) { return d.height + 2 * labelPadding; });
-};
-errorData(data2);
+//add svg to activity-curve div
+var svg = d3.select("div.activity-curve")
+            .append('svg')
+            .attr({
+              'height': svg_height,
+              'width': svg_width
+            })
+//define line function                          
+var line = d3.svg.line()
+                  .x(function(d){
+                    return scaleX(d.x)
+                  })
+                  .y(function(d){
+                    return scaleY(8000 - d.y)
+                  })
+//append path to svg
+svg.append('path')
+   .attr({
+     'd': line(cost),
+     'fill': 'none',
+     'stroke': '#D0021B',
+     'stroke-width': '2px'
+   })
+svg.append('path')
+   .attr({
+     'd': line(income),
+     'fill': 'none',
+     'stroke': '#4A90E2',
+     'stroke-width': '2px'
+   })
+svg.append('path')
+    .attr({
+      'd': line(revenue),
+      'fill': 'none',
+      'stroke': '#7ED321',
+      'stroke-width': '2px'
+    })

@@ -42,6 +42,11 @@ main {
       > div {
         margin-bottom: 20px;
       }
+      .main-title {
+        font-family: "HelveticaNeue-Bold";
+        font-size: 24px;
+        color: #000000;
+      }
       .overview-date-range {
         div {
           display: inline;
@@ -66,6 +71,13 @@ main {
         .row {
           width: 100%;
           margin: 0;
+
+          > div:nth-child(1) {
+            padding-left: 0;
+          }
+          > div:nth-child(3) {
+            padding-right: 0;
+          }
     
           .total-revenue, .total-cost, .net-income {
             background: #FFFFFF;
@@ -86,6 +98,7 @@ main {
           }
           
           .total-revenue {
+
             .number {
               color: #7ED321;
             }
@@ -104,16 +117,22 @@ main {
           }
         }
       }
+      .activity-curve {
+        background: #FFFFFF;
+        box-shadow: 0 0 10px 5px #EBEBEB;
+        border-radius: 3px;
+        .main-title {
+          margin-left: 40px;
+          padding-top: 30px;
+        }
+      }
       .transaction-latest {
         .transaction, .latest {
           background: #FFFFFF;
           box-shadow: 0 0 10px 5px #EBEBEB;
           border-radius: 3px;
           padding: 30px;
-          .title {
-            font-family: "HelveticaNeue-Bold";
-            font-size: 24px;
-            color: #000000;
+          .main-title {
             margin-bottom: 30px;
           }
         }
