@@ -1,0 +1,208 @@
+header {
+  background: #000000;
+  font-family: "HelveticaNeue-Bold";
+  color: #FFFFFF;
+  .container {
+    position: relative;
+    > div {
+      display: inline-block;
+      font-size: 24px;
+    }
+    .logo {
+      font-size: 24px;
+    }
+    .nav {
+      ul {
+        display: inline;
+        .active {
+          border-bottom: 1px #FFFFFF solid;
+        }
+        > div {
+          display: inline-block;
+          padding: 24px 0;
+          > li {
+            display: inline;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .admin {
+      font-size: 16px;
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+main {
+  background: #F2F2F2;
+  .container {
+    #home {
+      padding: 20px 0;
+      > div {
+        margin-bottom: 20px;
+      }
+      .overview-date-range {
+        div {
+          display: inline;
+        }
+        .date-range {
+          float: right;
+          font-family: "HelveticaNeue-Medium";
+          font-size: 16px;
+          color: #9B9B9B;
+          .range {
+            select {
+              font-family: "HelveticaNeue-Medium";
+              font-size: 16px;
+              color: #9B9B9B;
+              border: none;
+            }
+          }
+        }
+      }
+      .number-summary {
+        text-align: center;
+        .row {
+          width: 100%;
+          margin: 0;
+    
+          .total-revenue, .total-cost, .net-income {
+            background: #FFFFFF;
+            box-shadow: 0 0 10px 5px #EBEBEB;
+            border-radius: 3px;
+            padding: 30px 0;
+            font-family: "HelveticaNeue-Bold";
+            .number {
+              font-size: 36px;
+              margin-top: 8px;
+            }
+            .title {
+              margin-bottom: 8px;
+            }
+          }
+          
+          .total-revenue {
+            .number {
+              color: #7ED321;
+              
+            }
+          }
+          .total-cost {
+            .number {
+              color: #D0021B;
+              font-size: 36px;
+            }
+          }
+          .net-income {
+            .number {
+              color: #4A90E2;
+              font-size: 36px;
+            }
+          }
+        }
+      }
+      .transaction-latest {
+        .transaction, .latest {
+          background: #FFFFFF;
+          box-shadow: 0 0 10px 5px #EBEBEB;
+          border-radius: 3px;
+          padding: 30px;
+          .title {
+            font-family: "HelveticaNeue-Bold";
+            font-size: 24px;
+            color: #000000;
+          }
+          .facebook, .google, .shopify, .wordpress {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px 0;
+            .website-link {
+              span:nth-child(1) {
+                font-size: 45px;
+                vertical-align: middle;
+                margin-right: 20px;
+              }
+              span:nth-child(2) {
+                font-size: 16px;
+                color: #9B9B9B;
+              }
+            }
+            .number-percentage {
+              > span:nth-child(1) {
+                margin-right: 20px;
+              }
+              .increase {
+                color: #7ED321;;
+              }
+              .decrease {
+                color: #D0021B;
+              }
+            }
+          }
+        }
+      }
+    }
+    #orders {
+      display: none;
+      padding: 20px 0;
+      #table {
+        .table-header {
+          line-height: 40px;
+          background-color: #FFFFFF;
+          color: #000000;
+          font-size: 16px;
+          > div {
+            display: inline-block;
+          }
+        }
+        .table-content {
+          > div {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 17px;
+          }
+          &:nth-child(even) {
+            background-color: inherit;    
+          }
+          &:nth-child(odd) {
+            background-color: #EBEBEB;
+          }
+        }
+        .checkbox {
+          background-color: #FFFFFF;
+          height: 15px;
+          width: 15px;
+          margin: 0 8px 0 16px;
+        }
+        .customer {
+          width: 15%;
+        }
+        .product-list {
+          width: 17%;
+          .item {
+            .quantity {
+              float: right;
+            }
+          }
+        }
+        .total {
+          width: 8%;
+        }
+        .add-to-cart {
+          width: 13%;
+        }
+        .check-out {
+          width: 13%;
+        }
+        .address {
+          width: 15%;
+        }
+        .status {
+          width: 12%;
+        }
+      }
+    }
+  }  
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/screen.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <style>
+
+      text {
+        font: 10px sans-serif;
+      }
+      
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+      
+      .line {
+        fill: none;
+        stroke-width: 1.5px;
+      }
+      
+      .label {
+        text-anchor: middle;
+      }
+      
+      .label rect {
+        fill: white;
+      }
+      
+      .label-key {
+        font-weight: bold;
+      }
+      
+      </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+        <div class="logo">Shoptime</div>
+        <div class="nav">
+          <ul>
+            <div class="active" onclick="change_page(this)"><li>HOME</li></div>
+            <div onclick="change_page(this)"><li>ORDERS</li></div>
+            <div onclick="change_page(this)"><li>PRODUCT</li></div>
+          </ul>
+        </div>
+        <div class="admin">ADMIN</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div id="home">
+        <!--overview, date, range choose-->
+        <div class="overview-date-range">
+          <!--overview-->
+          <div class="overview">OVERVIEW</div>
+          <!--date, range choose-->
+          <div class="date-range">
+            <!--date-->
+            <div class="date">
+              <span>2018-06-06</span>
+              <span><i class="fas fa-caret-right"></i></span>
+              <span>2018-06-13</span>
+            </div>
+            <!--range choose-->
+            <div class="range">
+              <select>
+                <option value="Daily">Daily</option>
+                <option selected value="Weekly">Weekly</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Yearly">Yearly</option>
+                <option value="Custom">Custom</option>
+              </select>
+            </div>
+          </div>
+        </div>
+  
+        <!--total rev, total cost, net income-->
+        <div class="number-summary">
+          <div class="row">
+  
+            <div class="col-4">
+              <div class="total-revenue">
+                <div class="title">
+                  <span><i class="fas fa-hand-holding-usd"></i></span>
+                  <span>TOTAL REVENUE</span>
+                </div>
+                <div class="number">54,540</div>
+              </div>
+            </div>
+  
+            <div class="col-4">
+              <div class="total-cost">
+                <div class="title">
+                  <span><i class="fab fa-fort-awesome"></i></span>
+                  <span>TOTAL COST</span>
+                </div>
+                <div class="number">54,540</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="net-income">
+                <div class="title">
+                  <span><i class="fas fa-money-bill"></i></span>
+                  <span>NET INCOME</span>
+                </div>
+                <div class="number">54,540</div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="activity-curve">
+          <svg width="100%" height="406" style="background-color: white;"></svg>
+        </div>
+
+        <!--transaction, latest-->
+        <div class="transaction-latest">
+          <div class="row">
+  
+            <div class="col-6">
+              <!--transaction-->
+              <div class="transaction">
+                <!--title-->
+                <div class="title">Transaction Website</div>
+                <!--facebook-->
+                <div class="facebook">
+                  <div class="website-link">
+                    <span><i class="fab fa-facebook-square"></i></span>
+                    <span>facebook.com</span>
+                  </div>
+                  <div class="number-percentage">
+                    <span>45,836</span>
+                    <span class="increase">
+                      <span><i class="fas fa-arrow-up"></i></span>
+                      <span>20%</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div><hr style="border: 1px solid #EBEBEB;"></div>
+                <!--google-->
+                <div class="google">
+                  <div class="website-link">
+                    <span><i class="fab fa-google"></i></span>
+                    <span>google.com</span>
+                  </div>
+                  <div class="number-percentage">
+                    <span>45,836</span>
+                    <span class="increase">
+                      <span><i class="fas fa-arrow-up"></i></span>
+                      <span>20%</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div><hr style="border: 1px solid #EBEBEB;"></div>
+                <!--shopify-->
+                <div class="shopify">
+                  <div class="website-link">
+                    <span><i class="fab fa-facebook-square"></i></span>
+                    <span>shopify.com</span>
+                  </div>
+                  <div class="number-percentage">
+                    <span>45,836</span>
+                    <span class="decrease">
+                      <span><i class="fas fa-arrow-down"></i></span>
+                      <span>20%</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div><hr style="border: 1px solid #EBEBEB;"></div>
+                <!--wordpress-->
+                <div class="wordpress">
+                  <div class="website-link">
+                    <span><i class="fab fa-wordpress"></i></span>
+                    <span>wordpress.com</span>
+                  </div>
+                  <div class="number-percentage">
+                    <span>45,836</span>
+                    <span class="decrease">
+                      <span><i class="fas fa-arrow-down"></i></span>
+                      <span>20%</span>
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+  
+            <div class="col-6">
+              <!--latest-->
+              <div class="latest">
+                <div class="title">Latest Orders</div>
+                <div class="number">54,540</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="orders">
+        <div id="table">
+
+          <!--table header-->
+          <div class="table-header">
+            <div class="checkbox"></div>
+            <div class="customer">Customer</div>
+            <div class="product-list">ProductList</div> 
+            <div class="total">Total</div>
+            <div class="add-to-cart">Add to Cart</div>
+            <div class="check-out">Check-out</div>
+            <div class="address">Address</div>
+            <div class="status">Status</div>
+          </div>
+
+          <!--table content
+          <div class="table-content">
+            <div class="checkbox"></div>
+            <div class="customer">Ian Medina</div>
+            <div class="product-list">
+              <div class="item">
+                <div class="product-name">Vestibulum.</div>
+                <div class="price-quantity">
+                  <span class="price">$1400</span>
+                  <span class="quantity">1</span>
+                </div>
+              </div>
+              <div><hr style="border: 1px solid #FFFFFF;"></div>
+              <div class="item">
+                <div class="product-name">Fusce vehicu.</div>
+                <div class="price-quantity">
+                  <span class="price">$800</span>
+                  <span class="quantity">1</span>
+                </div>
+              </div>
+            </div>
+            <div class="total">$2200</div>
+            <div class="add-to-cart">
+              <div>2018/6/8</div>
+              <div>13:39</div>
+            </div>
+            <div class="check-out">
+              <div class="date">2018/6/8</div>
+              <div class="time">13:39</div>
+            </div>
+            <div class="address">386 Windler Drives Apt. 358</div>
+            <div class="status">Paid</div>
+          </div>
+        -->
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src = "faker/build/build/faker.js" type = "text/javascript"></script>
+  <script src = "src/generate_orders.js"></script>
+  <script src = "src/change_page.js"></script>
+  <script type = "text/javascript" src="data2.json"></script>
+  <script src = "src/curve.js"></script>
+</body>
+
+<html>
