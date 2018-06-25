@@ -112,12 +112,15 @@ main {
             font-family: "HelveticaNeue-Bold";
             font-size: 24px;
             color: #000000;
+            margin-bottom: 30px;
           }
+        }
+        .transaction {
           .facebook, .google, .shopify, .wordpress {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 30px 0;
+            margin: 24px 0;
             .website-link {
               span:nth-child(1) {
                 font-size: 45px;
@@ -138,6 +141,38 @@ main {
               }
               .decrease {
                 color: #D0021B;
+              }
+            }
+          }
+        }
+        .latest {
+          .product-shortcut {
+            overflow: auto;
+            .product-img {
+              float: left;
+              margin: 0 21px 0 0;
+              img {
+                height: 100px;
+              }
+            }
+            .product-name {
+              margin: 8px 0;
+              font-family: "HelveticaNeue-Bold";
+              font-size: 20px;
+            }
+            .order-details {
+              display: flex;
+              .time-customer {
+                margin: 0 88px 0 0;
+                .order-created-at {
+                  margin: 8px 0;
+                }
+              }
+              .total-cost {
+                > div:nth-child(1) {
+                  margin: 8px 0;
+                  float: right;
+                }
               }
             }
           }
