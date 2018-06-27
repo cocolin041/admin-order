@@ -43,7 +43,7 @@ var minY_all = d3.min(cost_income_revenue, function(d){ return d.y})
 
 //define scale
 var scaleX_date = d3.time.scale()
-                    .range([0, svg_width - path_margin.right])  //x range(width)
+                    .range([70, svg_width - path_margin.right + 30])  //x range(width)
                     .domain([new Date('2018-06-05'), new Date(maxDate_all)])
 var scaleX = d3.scale.linear()
                     .range([path_margin.left, svg_width - path_margin.right])  //x range(width)
