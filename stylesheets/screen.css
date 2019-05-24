@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -81,90 +81,87 @@ header .container {
 header .container > div {
   display: inline-block;
   font-size: 24px;
+  margin: 24px 30px;
 }
-/* line 11, ../sass/partials/home.scss */
-header .container .logo {
-  font-size: 24px;
-}
-/* line 15, ../sass/partials/home.scss */
+/* line 13, ../sass/partials/home.scss */
 header .container .nav ul {
   display: inline;
 }
-/* line 17, ../sass/partials/home.scss */
+/* line 15, ../sass/partials/home.scss */
 header .container .nav ul .active {
   border-bottom: 1px #FFFFFF solid;
 }
-/* line 20, ../sass/partials/home.scss */
+/* line 18, ../sass/partials/home.scss */
 header .container .nav ul > div {
   display: inline-block;
-  padding: 24px 0;
+  margin: 0 30px;
 }
-/* line 23, ../sass/partials/home.scss */
+/* line 21, ../sass/partials/home.scss */
 header .container .nav ul > div > li {
   display: inline;
   font-size: 16px;
 }
-/* line 30, ../sass/partials/home.scss */
+/* line 28, ../sass/partials/home.scss */
 header .container .admin {
   font-size: 16px;
   position: absolute;
   right: 0;
 }
 
-/* line 37, ../sass/partials/home.scss */
+/* line 35, ../sass/partials/home.scss */
 main {
   background: #F2F2F2;
 }
-/* line 40, ../sass/partials/home.scss */
+/* line 38, ../sass/partials/home.scss */
 main .container #home {
   padding: 20px 0;
 }
-/* line 42, ../sass/partials/home.scss */
+/* line 40, ../sass/partials/home.scss */
 main .container #home > div {
   margin-bottom: 20px;
 }
-/* line 45, ../sass/partials/home.scss */
+/* line 43, ../sass/partials/home.scss */
 main .container #home .main-title {
   font-family: "HelveticaNeue-Bold";
   font-size: 24px;
   color: #000000;
 }
-/* line 51, ../sass/partials/home.scss */
+/* line 49, ../sass/partials/home.scss */
 main .container #home .overview-date-range div {
   display: inline;
 }
-/* line 54, ../sass/partials/home.scss */
+/* line 52, ../sass/partials/home.scss */
 main .container #home .overview-date-range .date-range {
   float: right;
   font-family: "HelveticaNeue-Medium";
   font-size: 16px;
   color: #9B9B9B;
 }
-/* line 60, ../sass/partials/home.scss */
+/* line 58, ../sass/partials/home.scss */
 main .container #home .overview-date-range .date-range .range select {
   font-family: "HelveticaNeue-Medium";
   font-size: 16px;
   color: #9B9B9B;
   border: none;
 }
-/* line 69, ../sass/partials/home.scss */
+/* line 67, ../sass/partials/home.scss */
 main .container #home .number-summary {
   text-align: center;
 }
-/* line 71, ../sass/partials/home.scss */
+/* line 69, ../sass/partials/home.scss */
 main .container #home .number-summary .row {
   width: 100%;
   margin: 0;
 }
-/* line 75, ../sass/partials/home.scss */
+/* line 73, ../sass/partials/home.scss */
 main .container #home .number-summary .row > div:nth-child(1) {
   padding-left: 0;
 }
-/* line 78, ../sass/partials/home.scss */
+/* line 76, ../sass/partials/home.scss */
 main .container #home .number-summary .row > div:nth-child(3) {
   padding-right: 0;
 }
-/* line 82, ../sass/partials/home.scss */
+/* line 80, ../sass/partials/home.scss */
 main .container #home .number-summary .row .total-revenue, main .container #home .number-summary .row .total-cost, main .container #home .number-summary .row .net-income {
   background: #FFFFFF;
   box-shadow: 0 0 10px 5px #EBEBEB;
@@ -172,187 +169,187 @@ main .container #home .number-summary .row .total-revenue, main .container #home
   padding: 30px 0;
   font-family: "HelveticaNeue-Bold";
 }
-/* line 88, ../sass/partials/home.scss */
+/* line 86, ../sass/partials/home.scss */
 main .container #home .number-summary .row .total-revenue .number, main .container #home .number-summary .row .total-cost .number, main .container #home .number-summary .row .net-income .number {
   font-size: 36px;
   margin-top: 8px;
 }
-/* line 92, ../sass/partials/home.scss */
+/* line 90, ../sass/partials/home.scss */
 main .container #home .number-summary .row .total-revenue .title, main .container #home .number-summary .row .total-cost .title, main .container #home .number-summary .row .net-income .title {
   margin-bottom: 8px;
 }
-/* line 94, ../sass/partials/home.scss */
+/* line 92, ../sass/partials/home.scss */
 main .container #home .number-summary .row .total-revenue .title i, main .container #home .number-summary .row .total-cost .title i, main .container #home .number-summary .row .net-income .title i {
   font-size: 24px;
 }
-/* line 102, ../sass/partials/home.scss */
+/* line 100, ../sass/partials/home.scss */
 main .container #home .number-summary .row .total-revenue .number {
   color: #7ED321;
 }
-/* line 107, ../sass/partials/home.scss */
+/* line 105, ../sass/partials/home.scss */
 main .container #home .number-summary .row .total-cost .number {
   color: #D0021B;
   font-size: 36px;
 }
-/* line 113, ../sass/partials/home.scss */
+/* line 111, ../sass/partials/home.scss */
 main .container #home .number-summary .row .net-income .number {
   color: #4A90E2;
   font-size: 36px;
 }
-/* line 120, ../sass/partials/home.scss */
+/* line 118, ../sass/partials/home.scss */
 main .container #home .activity-curve {
   background: #FFFFFF;
   box-shadow: 0 0 10px 5px #EBEBEB;
   border-radius: 3px;
 }
-/* line 124, ../sass/partials/home.scss */
+/* line 122, ../sass/partials/home.scss */
 main .container #home .activity-curve .main-title {
   margin-left: 40px;
   padding-top: 30px;
 }
-/* line 130, ../sass/partials/home.scss */
+/* line 128, ../sass/partials/home.scss */
 main .container #home .transaction-latest .transaction, main .container #home .transaction-latest .latest {
   background: #FFFFFF;
   box-shadow: 0 0 10px 5px #EBEBEB;
   border-radius: 3px;
   padding: 30px;
 }
-/* line 135, ../sass/partials/home.scss */
+/* line 133, ../sass/partials/home.scss */
 main .container #home .transaction-latest .transaction .main-title, main .container #home .transaction-latest .latest .main-title {
   margin-bottom: 30px;
 }
-/* line 140, ../sass/partials/home.scss */
+/* line 138, ../sass/partials/home.scss */
 main .container #home .transaction-latest .transaction .facebook, main .container #home .transaction-latest .transaction .google, main .container #home .transaction-latest .transaction .shopify, main .container #home .transaction-latest .transaction .wordpress {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 24px 0;
 }
-/* line 146, ../sass/partials/home.scss */
+/* line 144, ../sass/partials/home.scss */
 main .container #home .transaction-latest .transaction .facebook .website-link span:nth-child(1), main .container #home .transaction-latest .transaction .google .website-link span:nth-child(1), main .container #home .transaction-latest .transaction .shopify .website-link span:nth-child(1), main .container #home .transaction-latest .transaction .wordpress .website-link span:nth-child(1) {
   font-size: 45px;
   vertical-align: middle;
   margin-right: 20px;
 }
-/* line 151, ../sass/partials/home.scss */
+/* line 149, ../sass/partials/home.scss */
 main .container #home .transaction-latest .transaction .facebook .website-link span:nth-child(2), main .container #home .transaction-latest .transaction .google .website-link span:nth-child(2), main .container #home .transaction-latest .transaction .shopify .website-link span:nth-child(2), main .container #home .transaction-latest .transaction .wordpress .website-link span:nth-child(2) {
   font-size: 16px;
   color: #9B9B9B;
 }
-/* line 157, ../sass/partials/home.scss */
+/* line 155, ../sass/partials/home.scss */
 main .container #home .transaction-latest .transaction .facebook .number-percentage > span:nth-child(1), main .container #home .transaction-latest .transaction .google .number-percentage > span:nth-child(1), main .container #home .transaction-latest .transaction .shopify .number-percentage > span:nth-child(1), main .container #home .transaction-latest .transaction .wordpress .number-percentage > span:nth-child(1) {
   margin-right: 20px;
 }
-/* line 160, ../sass/partials/home.scss */
+/* line 158, ../sass/partials/home.scss */
 main .container #home .transaction-latest .transaction .facebook .number-percentage .increase, main .container #home .transaction-latest .transaction .google .number-percentage .increase, main .container #home .transaction-latest .transaction .shopify .number-percentage .increase, main .container #home .transaction-latest .transaction .wordpress .number-percentage .increase {
   color: #7ED321;
 }
-/* line 163, ../sass/partials/home.scss */
+/* line 161, ../sass/partials/home.scss */
 main .container #home .transaction-latest .transaction .facebook .number-percentage .decrease, main .container #home .transaction-latest .transaction .google .number-percentage .decrease, main .container #home .transaction-latest .transaction .shopify .number-percentage .decrease, main .container #home .transaction-latest .transaction .wordpress .number-percentage .decrease {
   color: #D0021B;
 }
-/* line 170, ../sass/partials/home.scss */
+/* line 168, ../sass/partials/home.scss */
 main .container #home .transaction-latest .latest .product-shortcut {
   overflow: auto;
 }
-/* line 172, ../sass/partials/home.scss */
+/* line 170, ../sass/partials/home.scss */
 main .container #home .transaction-latest .latest .product-shortcut .product-img {
   float: left;
   margin: 0 21px 0 0;
 }
-/* line 175, ../sass/partials/home.scss */
+/* line 173, ../sass/partials/home.scss */
 main .container #home .transaction-latest .latest .product-shortcut .product-img img {
   height: 100px;
 }
-/* line 179, ../sass/partials/home.scss */
+/* line 177, ../sass/partials/home.scss */
 main .container #home .transaction-latest .latest .product-shortcut .product-name {
   margin: 8px 0;
   font-family: "HelveticaNeue-Bold";
   font-size: 20px;
 }
-/* line 184, ../sass/partials/home.scss */
+/* line 182, ../sass/partials/home.scss */
 main .container #home .transaction-latest .latest .product-shortcut .order-details {
   display: flex;
 }
-/* line 186, ../sass/partials/home.scss */
+/* line 184, ../sass/partials/home.scss */
 main .container #home .transaction-latest .latest .product-shortcut .order-details .time-customer {
   margin: 0 88px 0 0;
 }
-/* line 188, ../sass/partials/home.scss */
+/* line 186, ../sass/partials/home.scss */
 main .container #home .transaction-latest .latest .product-shortcut .order-details .time-customer .order-created-at {
   margin: 8px 0;
 }
-/* line 193, ../sass/partials/home.scss */
+/* line 191, ../sass/partials/home.scss */
 main .container #home .transaction-latest .latest .product-shortcut .order-details .total-cost > div:nth-child(1) {
   margin: 8px 0;
   float: right;
 }
-/* line 203, ../sass/partials/home.scss */
+/* line 201, ../sass/partials/home.scss */
 main .container #orders {
   display: none;
   padding: 20px 0;
 }
-/* line 207, ../sass/partials/home.scss */
+/* line 205, ../sass/partials/home.scss */
 main .container #orders #table .table-header {
   line-height: 40px;
   background-color: #FFFFFF;
   color: #000000;
   font-size: 16px;
 }
-/* line 212, ../sass/partials/home.scss */
+/* line 210, ../sass/partials/home.scss */
 main .container #orders #table .table-header > div {
   display: inline-block;
 }
-/* line 217, ../sass/partials/home.scss */
+/* line 215, ../sass/partials/home.scss */
 main .container #orders #table .table-content > div {
   display: inline-block;
   vertical-align: top;
   margin-top: 17px;
 }
-/* line 222, ../sass/partials/home.scss */
+/* line 220, ../sass/partials/home.scss */
 main .container #orders #table .table-content:nth-child(even) {
   background-color: inherit;
 }
-/* line 225, ../sass/partials/home.scss */
+/* line 223, ../sass/partials/home.scss */
 main .container #orders #table .table-content:nth-child(odd) {
   background-color: #EBEBEB;
 }
-/* line 229, ../sass/partials/home.scss */
+/* line 227, ../sass/partials/home.scss */
 main .container #orders #table .checkbox {
   background-color: #FFFFFF;
   height: 15px;
   width: 15px;
   margin: 0 8px 0 16px;
 }
-/* line 235, ../sass/partials/home.scss */
+/* line 233, ../sass/partials/home.scss */
 main .container #orders #table .customer {
   width: 15%;
 }
-/* line 238, ../sass/partials/home.scss */
+/* line 236, ../sass/partials/home.scss */
 main .container #orders #table .product-list {
   width: 17%;
 }
-/* line 241, ../sass/partials/home.scss */
+/* line 239, ../sass/partials/home.scss */
 main .container #orders #table .product-list .item .quantity {
   float: right;
 }
-/* line 246, ../sass/partials/home.scss */
+/* line 244, ../sass/partials/home.scss */
 main .container #orders #table .total {
   width: 8%;
 }
-/* line 249, ../sass/partials/home.scss */
+/* line 247, ../sass/partials/home.scss */
 main .container #orders #table .add-to-cart {
   width: 13%;
 }
-/* line 252, ../sass/partials/home.scss */
+/* line 250, ../sass/partials/home.scss */
 main .container #orders #table .check-out {
   width: 13%;
 }
-/* line 255, ../sass/partials/home.scss */
+/* line 253, ../sass/partials/home.scss */
 main .container #orders #table .address {
   width: 15%;
 }
-/* line 258, ../sass/partials/home.scss */
+/* line 256, ../sass/partials/home.scss */
 main .container #orders #table .status {
   width: 12%;
 }
